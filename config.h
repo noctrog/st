@@ -5,7 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Inconsolata:pixelsize=17:antialias=true:autohint=true";
+//static char *font = "Inconsolata:pixelsize=17:antialias=true:autohint=true";
+static char *font = "IBM Plex Mono:pixelsize=17:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -116,17 +117,18 @@ float alpha = 1.0;
 //};
 
 /* Terminal colors (16 first used in escape sequence) */
+/* NORD */
 static const char *colorname[] = {
 
   /* 8 normal colors */
-  [0] = "#282a2e", /* black   */
-  [1] = "#a54242", /* red     */
-  [2] = "#8c9440", /* green   */
-  [3] = "#de935f", /* yellow  */
-  [4] = "#5f819d", /* blue    */
-  [5] = "#85678f", /* magenta */
-  [6] = "#5e8d87", /* cyan    */
-  [7] = "#707880", /* white   */
+  [0] = "#2E3440", /* black   */
+  [1] = "#BF616A", /* red     */
+  [2] = "#A3BE8C", /* green   */
+  [3] = "#EBCB8B", /* yellow  */
+  [4] = "#5E81AC", /* blue    */
+  [5] = "#B48EAD", /* magenta */
+  [6] = "#88C0D0", /* cyan    */
+  [7] = "#E5E9F0", /* white   */
 
   /* 8 bright colors */
   [8]  = "#373b41", /* black   */
@@ -139,9 +141,37 @@ static const char *colorname[] = {
   [15] = "#c5c8c6", /* white   */
 
   /* special colors */
-  [256] = "#282828", /* background */
-  [257] = "#c5c8c6", /* foreground */
+  [256] = "#2E3440", /* background */
+  [257] = "#ECEFF4", /* foreground */
 };
+/* Terminal colors (16 first used in escape sequence) */
+/* GRUVBOX */
+//static const char *colorname[] = {
+
+  //[> 8 normal colors <]
+  //[0] = "#282a2e", [> black   <]
+  //[1] = "#a54242", [> red     <]
+  //[2] = "#8c9440", [> green   <]
+  //[3] = "#de935f", [> yellow  <]
+  //[4] = "#5f819d", [> blue    <]
+  //[5] = "#85678f", [> magenta <]
+  //[6] = "#5e8d87", [> cyan    <]
+  //[7] = "#707880", [> white   <]
+
+  //[> 8 bright colors <]
+  //[8]  = "#373b41", [> black   <]
+  //[9]  = "#cc6666", [> red     <]
+  //[10] = "#b5bd68", [> green   <]
+  //[11] = "#f0c674", [> yellow  <]
+  //[12] = "#81a2be", [> blue    <]
+  //[13] = "#b294bb", [> magenta <]
+  //[14] = "#8abeb7", [> cyan    <]
+  //[15] = "#c5c8c6", [> white   <]
+
+  //[> special colors <]
+  //[256] = "#282828", [> background <]
+  //[257] = "#c5c8c6", [> foreground <]
+//};
 
 
 /*
